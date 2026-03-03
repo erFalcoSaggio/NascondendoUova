@@ -1,0 +1,20 @@
+/Users/ale/Desktop/scuola/2025_26/informatica/Nascondendo Uova/Nascondendo Uova/Nascondendo Uova/obj/Debug/net10.0/Nascondendo Uova.csproj.AssemblyReference.cache
+/Users/ale/Desktop/scuola/2025_26/informatica/Nascondendo Uova/Nascondendo Uova/Nascondendo Uova/obj/Debug/net10.0/Nascondendo Uova.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ale/Desktop/scuola/2025_26/informatica/Nascondendo Uova/Nascondendo Uova/Nascondendo Uova/obj/Debug/net10.0/Nascondendo Uova.AssemblyInfoInputs.cache
+/Users/ale/Desktop/scuola/2025_26/informatica/Nascondendo Uova/Nascondendo Uova/Nascondendo Uova/obj/Debug/net10.0/Nascondendo Uova.AssemblyInfo.cs
+/Users/ale/Desktop/scuola/2025_26/informatica/Nascondendo Uova/Nascondendo Uova/Nascondendo Uova/obj/Debug/net10.0/Nascondendo Uova.csproj.CoreCompileInputs.cache
+/Users/ale/Desktop/scuola/2025_26/informatica/Nascondendo Uova/Nascondendo Uova/Nascondendo Uova/bin/Debug/net10.0/Nascondendo Uova
+/Users/ale/Desktop/scuola/2025_26/informatica/Nascondendo Uova/Nascondendo Uova/Nascondendo Uova/bin/Debug/net10.0/Nascondendo Uova.deps.json
+/Users/ale/Desktop/scuola/2025_26/informatica/Nascondendo Uova/Nascondendo Uova/Nascondendo Uova/bin/Debug/net10.0/Nascondendo Uova.runtimeconfig.json
+/Users/ale/Desktop/scuola/2025_26/informatica/Nascondendo Uova/Nascondendo Uova/Nascondendo Uova/bin/Debug/net10.0/Nascondendo Uova.dll
+/Users/ale/Desktop/scuola/2025_26/informatica/Nascondendo Uova/Nascondendo Uova/Nascondendo Uova/bin/Debug/net10.0/Nascondendo Uova.pdb
+/Users/ale/Desktop/scuola/2025_26/informatica/Nascondendo Uova/Nascondendo Uova/Nascondendo Uova/bin/Debug/net10.0/QueueLibrary.dll
+/Users/ale/Desktop/scuola/2025_26/informatica/Nascondendo Uova/Nascondendo Uova/Nascondendo Uova/bin/Debug/net10.0/StackLibrary.dll
+/Users/ale/Desktop/scuola/2025_26/informatica/Nascondendo Uova/Nascondendo Uova/Nascondendo Uova/bin/Debug/net10.0/QueueLibrary.pdb
+/Users/ale/Desktop/scuola/2025_26/informatica/Nascondendo Uova/Nascondendo Uova/Nascondendo Uova/bin/Debug/net10.0/StackLibrary.pdb
+/Users/ale/Desktop/scuola/2025_26/informatica/Nascondendo Uova/Nascondendo Uova/Nascondendo Uova/obj/Debug/net10.0/Nasconde.5D83E10A.Up2Date
+/Users/ale/Desktop/scuola/2025_26/informatica/Nascondendo Uova/Nascondendo Uova/Nascondendo Uova/obj/Debug/net10.0/Nascondendo Uova.dll
+/Users/ale/Desktop/scuola/2025_26/informatica/Nascondendo Uova/Nascondendo Uova/Nascondendo Uova/obj/Debug/net10.0/refint/Nascondendo Uova.dll
+/Users/ale/Desktop/scuola/2025_26/informatica/Nascondendo Uova/Nascondendo Uova/Nascondendo Uova/obj/Debug/net10.0/Nascondendo Uova.pdb
+/Users/ale/Desktop/scuola/2025_26/informatica/Nascondendo Uova/Nascondendo Uova/Nascondendo Uova/obj/Debug/net10.0/Nascondendo Uova.genruntimeconfig.cache
+/Users/ale/Desktop/scuola/2025_26/informatica/Nascondendo Uova/Nascondendo Uova/Nascondendo Uova/obj/Debug/net10.0/ref/Nascondendo Uova.dll
