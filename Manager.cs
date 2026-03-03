@@ -14,35 +14,64 @@ public class Manager
     public Manager()
     {
         eggs = new Queue<Egg>();
+        toColor = new Queue<Egg>();
         mutexQueue = new SemaphoreSlim(1);
+        mutexToColorQueue = new SemaphoreSlim(1);
     }
-    public async Task SendEgg()
+    public async Task SendEgg(CancellationToken token)
     {
+        await Task.Delay(500);
         try
         {
-            while (true)
+            while (!token.IsCancellationRequested)
             {
+                await Task.Delay(500);
                 //prima di generare un nuovo uovo controlli
                 await mutexToColorQueue.WaitAsync();
                 try
                 {
                     if (toColor.Count > 0)
                     {
-                        toColor.Peek().colors = (GenerateColor(Random.Shared.Next(6)), GenerateColor(Random.Shared.Next(6)));
-                        eggs.Enqueue(toColor.Dequeue());
+                        Egg oldEgg = toColor.Dequeue();
+                        (Color, Color) oldColors = oldEgg.colors;
+                        Color color1, color2;
+                        do
+                        {
+                            color1 = GenerateColor(Random.Shared.Next(6));
+                            color2 = GenerateColor(Random.Shared.Next(6));
+                        }
+                        while (
+                            color1 == oldColors.Item1 ||
+                            color1 == oldColors.Item2 ||
+                            color2 == oldColors.Item1 ||
+                            color2 == oldColors.Item2
+                        );
+                        Egg newEgg = new Egg((color1, color2));
+                        await mutexQueue.WaitAsync();
+                        try { eggs.Enqueue(newEgg); }
+                        finally { mutexQueue.Release(); }
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("[MANAGER] Egg colors are changed. Sent to Anselmo");
+                        Console.ForegroundColor = ConsoleColor.White;
                     }
                 }
                 finally
                 {
                     mutexToColorQueue.Release();
                 }
-                await mutexQueue.WaitAsync(); //aspetto per la queue
+
                 Egg egg = new Egg((GenerateColor(Random.Shared.Next(6)), GenerateColor(Random.Shared.Next(6)))); //uovo
-                eggs.Enqueue(egg);
+                await mutexQueue.WaitAsync();
+                try { eggs.Enqueue(egg); }
+                finally { mutexQueue.Release(); }
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("[MANAGER] Added an egg to the Queue.");
+                Console.ForegroundColor = ConsoleColor.White;
             }
-        } catch (OperationCanceledException)
+        } 
+        catch (OperationCanceledException)
         {
-            
+            Console.WriteLine("Stopped.");
         }
     }
     private Color GenerateColor(int n)
