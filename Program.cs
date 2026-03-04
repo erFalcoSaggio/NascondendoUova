@@ -16,7 +16,7 @@ class Program
         //task Anselmo
         Task rabbitTask = Task.Run(async () =>
         {
-            while (rabbit.lawn.Count < 10)
+            while (rabbit.lawn.Count < Random.Shared.Next(10, 25))
                 await rabbit.GetEgg();
             //ferma il manager
             cts.Cancel();
